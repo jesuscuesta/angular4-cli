@@ -48,7 +48,8 @@ const routes: Routes = [
             { path: 'detail', component: DetailVillaneComponent }
           ]},
   { path: 'zoom', loadChildren: 'app/zoom/zoom.module#ZoomModule'},
-  { path: 'mrfantastic', component: MrfantasticComponent }
+  { path: 'mrfantastic', component: MrfantasticComponent },
+  { path: 'decorators', loadChildren: 'app/decorators/decorators.module#DecoratorsModule'}
 ];
 
 @NgModule({
