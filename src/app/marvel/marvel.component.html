@@ -1,0 +1,8 @@
+<div>
+	<ul class="mutantes">
+		<li *ngFor="let personaje of mutante" [class.selected]="personaje === selectedMutante"
+        (click)="onSelect(personaje)">{{personaje.apodo}}</li>
+	</ul>
+</div>
+
+<detail [mutante]="selectedMutante"></detail>

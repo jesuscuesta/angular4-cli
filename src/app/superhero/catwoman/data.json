@@ -1,0 +1,36 @@
+[{
+	"apodo": "Spiderman",
+	"nombrereal": "Spiderman",
+	"fuerza": 12,
+	"velocidad": 31,
+	"resistencia": 6,
+	"energia": 5
+}, {
+	"apodo": "Superman",
+	"nombrereal": "Superman",
+	"fuerza": 12,
+	"velocidad": 31,
+	"resistencia": 6,
+	"energia": 5
+}, {
+	"apodo": "Birdman",
+	"nombrereal": "Birdman",
+	"fuerza": 12,
+	"velocidad": 31,
+	"resistencia": 6,
+	"energia": 5
+}, {
+	"apodo": "Flash",
+	"nombrereal": "Flash",
+	"fuerza": 12,
+	"velocidad": 31,
+	"resistencia": 6,
+	"energia": 5
+}, {
+	"apodo": "Robin",
+	"nombrereal": "Robin",
+	"fuerza": 12,
+	"velocidad": 31,
+	"resistencia": 6,
+	"energia": 5
+}]

@@ -1,0 +1,35 @@
+<p>
+  mrfantastic works!
+</p>
+<div>
+  <p>Pasamos datos con $event.</p>
+  <input (keyup)="onKey($event)">
+  <p>{{values}}</p>
+</div>
+
+<div>
+  <p>Pasamos los datos con #box.</p>
+  <input #box (keyup)="0">
+  <p>{{box.value}}</p>
+</div>
+
+<div>
+  <p>Esta implementación es mejor que la primera. Evitamos usar el $event, dónde estamos enviando más información.
+En este caso, solo enviaríamos la información que fuésemos a usar.</p>
+  <input #boxKey (keyup)="onKeyBox(boxKey.value)">
+  <p>{{valuesBox}}</p>
+</div>
+
+<div>
+  <p>Solo se activará al pulsar enter.</p>
+  <input #boxEnter (keyup.enter)="onEnter(boxEnter.value)">
+  <p>{{valueBoxEnter}}</p>
+</div>
+
+<div>
+  <p>Se activa al pulsar enter, o pulsar fuera.</p>
+  <input #boxEnterClick
+        (keyup.enter)="onEnterClick(boxEnterClick.value)"
+        (blur)="onEnterClick(boxEnterClick.value)">
+  <p>{{valueBoxEnterClick}}</p>
+</div>

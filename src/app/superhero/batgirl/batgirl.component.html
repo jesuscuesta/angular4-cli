@@ -1,0 +1,13 @@
+<div class="heroes">
+	<ul>
+		<li *ngFor="let personaje of heroe" [class.selected]="personaje === selectedHeroe"
+        (click)="onSelect(personaje)">{{personaje.apodo}}</li>
+	</ul>
+</div>
+
+<div *ngIf="selectedHeroe">
+  	<h2>
+    	{{selectedHeroe.apodo | uppercase}} es mi heroe.
+  		<button (click)="gotoDetail()">Ver Heroe en detalle</button>
+  	</h2>
+</div>
