@@ -12,4 +12,8 @@ export class SecuazComponent {
     alert("Estoy a tus órdenes Joker");
   }
 
+  saludoreina(){
+    alert("Estoy a tus órdenes Harley");
+  }
+
 }

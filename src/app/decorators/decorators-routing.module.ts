@@ -3,10 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DecoratorsComponent } from './decorators.component';
 import { JokerComponent } from './joker/joker.component';
-import { SecuazComponent } from './joker/secuaz/secuaz.component';
+import { QuinnComponent } from './quinn/quinn.component';
 
 const routes: Routes = [
   { path: 'decorators/joker', component: JokerComponent },
+  { path: 'decorators/quinn', component: QuinnComponent },
   { path: '', component: DecoratorsComponent }
 ];
 

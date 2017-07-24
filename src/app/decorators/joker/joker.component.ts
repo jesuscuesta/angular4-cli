@@ -6,23 +6,13 @@ import { SecuazComponent } from './secuaz/secuaz.component';
   templateUrl: './joker.component.html',
   styleUrls: ['./joker.component.css']
 })
-export class JokerComponent implements OnInit {
+export class JokerComponent {
 
-  @ViewChild(SecuazComponent) secuaz: SecuazComponent
-
-
+  @ViewChild(SecuazComponent) secuaz: SecuazComponent;
+  
   constructor() { }
-
-  ngOnInit() {
-  }
-
-  ngAfterViewInit() {
-    // Después de inicializar la vista, mirarSecuaz se cargará.
-    this.mirarSecuaz();
-  }
 
   mirarSecuaz(){
     this.secuaz.saludo();
   }
-
 }
